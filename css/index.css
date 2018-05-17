@@ -1,0 +1,9 @@
+.navbar{
+    list-style-type: none;
+}
+.navbar li{
+    display: inline;
+    margin: 0px 10px;
+    border: 1px solid purple;
+    border-radius: 2px;
+}
