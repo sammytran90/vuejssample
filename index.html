@@ -10,6 +10,7 @@
 </head>
 
 <body>
+<<<<<<< HEAD
     <!--template for the form-->
     <template id="form">
         <div>
@@ -33,6 +34,27 @@
 
     <div id="app">
         <greetings-component></greetings-component>
+=======
+    <template id="container">
+        <div>
+            <form-component :user.sync="user"></form-component>
+            <content-component :user="user"></content-component>
+        </div>
+    </template>
+    <template id="form">
+        <div class="inputname">
+            <label for="name"> Your name is:</label>
+            <input type="text" name="name" :value="value" v-on:input="onInput">
+        </div>
+    </template>
+    <template id="content">
+        <div class="content">
+            <div class="p1">greatings {{user}}</div>
+        </div>
+    </template>
+    <div id="app">
+        <container-component></container-component>
+>>>>>>> 7ab20560bbddeb3fd72822c9c0e164745969e5f2
     </div>
     <script src="./js/vue.js"></script>
     <script src="./js/main.js"></script>
